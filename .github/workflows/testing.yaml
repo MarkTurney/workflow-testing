@@ -1,0 +1,13 @@
+on: [push]
+
+jobs:
+
+  build-job:
+    runs-on: docker
+    container:
+      image: alpine:latest
+    steps:
+    - name: test custom docker action
+      id: test-custom-docker-action
+      uses: https://github.com/MarkTurney/docker-action@v1.0.0
+    - run: ls -all ~
