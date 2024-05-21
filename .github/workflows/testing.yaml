@@ -3,7 +3,7 @@ on: [push]
 jobs:
 
   build-job:
-    runs-on: ubuntu:latest
+    runs-on: ubuntu-latest
     steps:
     - name: test custom docker action
       id: test-custom-docker-action
