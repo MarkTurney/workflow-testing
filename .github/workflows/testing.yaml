@@ -7,5 +7,5 @@ jobs:
     steps:
     - name: test custom docker action
       id: test-custom-docker-action
-      uses: https://github.com/MarkTurney/docker-action@v1.0.0
+      uses: MarkTurney/docker-action@v1.0.0
     - run: ls -all ~
