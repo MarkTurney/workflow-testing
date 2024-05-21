@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: test custom docker action
       id: test-custom-docker-action
-      uses: MarkTurney/docker-action@v1.0.3
+      uses: MarkTurney/docker-action@v1.0.4
       with:
         path: "~/build"
     - run: ls -all ~
