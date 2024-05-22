@@ -1,13 +1,10 @@
 on: [push]
 
 jobs:
-
   build-job:
     runs-on: ubuntu-latest
     steps:
     - name: test custom docker action
       id: test-custom-docker-action
-      uses: MarkTurney/docker-action@v1.0.7
-      # with:
-      #   path: "~/build"
+      uses: MarkTurney/docker-action@v1.0.8
     - run: ls -all ~
